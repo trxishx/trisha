@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trisha Chandrika's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General body styles */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fb; /* Light background color */
+            color: #333;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #2c3e50; /* Dark blue */
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        /* Container and layout */
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            flex-wrap: wrap; /* For responsive design */
+        }
+
+        .left, .right {
+            width: 48%; /* Adjusted for balanced layout */
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: #2c3e50; /* Dark blue */
+            font-size: 1.5rem;
+        }
+
+        .contact-info {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-info li {
+            margin: 8px 0;
+            font-size: 1rem;
+            color: #7f8c8d; /* Grey */
+        }
+
+        .contact-info a {
+            color: #3498db; /* Blue for links */
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Chatbox styles */
+        .chatbox {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 320px;
+            height: 400px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            display: none;
+            flex-direction: column;
+        }
+
+        .chatbox-header {
+            background-color: #3498db; /* Blue */
+            color: #fff;
+            padding: 12px;
+            font-size: 16px;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .chatbox-body {
+            flex: 1;
+            overflow-y: scroll;
+            padding: 10px;
+            background-color: #ecf0f1; /* Light gray */
+        }
+
+        .chatbox-footer {
+            padding: 10px;
+            display: flex;
+        }
+
+        .chatbox-footer input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .chatbox-footer button {
+            padding: 10px;
+            margin-left: 10px;
+            background-color: #7f8c8d; /* Grey */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: not-allowed;
+        }
+
+        .chatbox-footer button:hover {
+            background-color: #95a5a6; /* Light gray */
+        }
+
+        .message {
+            margin: 10px 0;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        .message.bot {
+            background-color: #ecf0f1; /* Light gray */
+            color: #2c3e50;
+            text-align: left;
+        }
+
+        .message.user {
+            background-color: #3498db; /* Blue */
+            color: #fff;
+            text-align: right;
+        }
+
+        /* Button to open chat */
+        button {
+            background-color: #3498db; /* Blue */
+            color: #fff;
+            border: none;
+            padding: 12px 18px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        button:hover {
+            background-color: #2980b9; /* Darker blue */
+        }
+
+        footer {
+            text-align: center;
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Trisha Chandrika's Portfolio</h1>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <div class="left">
+                <div class="card">
+                    <h2>ABOUT ME <img src="c:\Users\trish\OneDrive\Desktop\hemu pdfs\portfolio.jpg" alt="Image" width="500" height="450" />
+                    </h2>
+                    <p> I am a bold and creative professional with a strong, dynamic personality, dedicated to making technical challenges both engaging and accessible. My expertise lies in simplifying complex concepts, empowering beginners, and delivering impactful experiences through speeches, writing, and events. I bring energy and enthusiasm to every endeavor, fostering an approachable and inclusive environment.
+
+                        My approach is both professional and relatable, combining clarity and empowerment with a unique, creative flair.             </div>
+            <div class="top">
+                <div class="card">
+                    <h2>CONNECT :</h2>
+                    <ul class="contact-info">
+                        <li><strong>NAME:</strong> K.TRISHA CHANDRIKA</li>
+                        <li><strong>DEPARTMRNT:</strong> CSE/AIML</li>
+                        <li><strong>ROLL NO:</strong> 22R21A6688</li>
+                        <li><strong>COLLEGE:</strong> MLRIT</li>
+                        <li><strong>EMAIL:</strong> <a href="mailto:trishachandrika2004@gmail.com">trishachandrika2004@gmail.com </a></li>
+                        <li><strong>PHONE NO:</strong> 9392786692</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbox -->
+    <div class="chatbox" id="chatbox">
+        <div class="chatbox-header">
+            <span>Chat with me!</span>
+            <button onclick="toggleChatbox()">X</button>
+        </div>
+        <div class="chatbox-body" id="chatboxBody">
+            <!-- Static chat messages -->
+            <div class="message bot">
+                <p>Hi! How can I help you?</p>
+            </div>
+            <div class="message bot">
+                <p>any queries ?</p>
+            </div>
+        </div>
+        <div class="chatbox-footer">
+            <input type="text" id="chatInput" placeholder="Type a message..." disabled />
+            <button onclick="sendMessage()" disabled>Send</button>
+        </div>
+    </div>
+
+    <!-- Button to open the chat -->
+    <button onclick="toggleChatbox()">Chat</button>
+
+    <footer>
+        <p>&copy; 2024 Trisha Chandrika</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleChatbox() {
+            const chatbox = document.getElementById('chatbox');
+            chatbox.style.display = chatbox.style.display === 'none' || chatbox.style.display === '' ? 'flex' : 'none';
+        }
+
+        function sendMessage() {
+            // Function disabled as the chat is non-interactive
+        }
+    </script>
+</body>
+</html>
+
